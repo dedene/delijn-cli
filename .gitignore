@@ -1,0 +1,42 @@
+# Spec and internal docs
+tmp/
+
+# Binary (use /name to avoid matching cmd/delijn/)
+/delijn
+
+# Build artifacts
+dist/
+bin/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+go.work.sum
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage.out
+coverage.html
+
+# Local tools
+.tools/
+
+# Environment (should use keyring, but just in case)
+.env
+.env.local
