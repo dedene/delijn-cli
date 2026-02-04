@@ -3,6 +3,7 @@
 A command-line interface for [De Lijn](https://www.delijn.be/) - Flemish public transport.
 
 [![CI](https://github.com/dedene/delijn-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/dedene/delijn-cli/actions/workflows/ci.yml)
+[![Go 1.23+](https://img.shields.io/badge/go-1.23+-00ADD8.svg)](https://go.dev/)
 [![Go Report Card](https://goreportcard.com/badge/github.com/dedene/delijn-cli)](https://goreportcard.com/report/github.com/dedene/delijn-cli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
