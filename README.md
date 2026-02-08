@@ -148,15 +148,13 @@ De Lijn API has two rate limits:
 
 The CLI handles rate limiting automatically.
 
-## Claude Code Skill
+## Agent Skill
 
-Install as a Claude Code skill:
+This CLI is available as an [open agent skill](https://skills.sh/) for AI assistants including [Claude Code](https://claude.ai/code), [OpenClaw](https://openclaw.ai/), Cursor, and GitHub Copilot:
 
 ```bash
-npx @anthropic-ai/claude-code skills add dedene/delijn-cli
+npx skills add dedene/delijn-cli
 ```
-
-This enables Claude to query De Lijn departures, search stops, and check Flemish public transport schedules.
 
 ## License
 
