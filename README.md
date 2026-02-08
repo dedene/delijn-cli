@@ -148,6 +148,16 @@ De Lijn API has two rate limits:
 
 The CLI handles rate limiting automatically.
 
+## Claude Code Skill
+
+Install as a Claude Code skill:
+
+```bash
+npx @anthropic-ai/claude-code skills add dedene/delijn-cli
+```
+
+This enables Claude to query De Lijn departures, search stops, and check Flemish public transport schedules.
+
 ## License
 
 MIT - see [LICENSE](LICENSE)
