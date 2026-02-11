@@ -7,6 +7,14 @@ A command-line interface for [De Lijn](https://www.delijn.be/) - Flemish public 
 [![Go Report Card](https://goreportcard.com/badge/github.com/dedene/delijn-cli)](https://goreportcard.com/report/github.com/dedene/delijn-cli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
+## Agent Skill
+
+This CLI is available as an [open agent skill](https://skills.sh/) for AI assistants including [Claude Code](https://claude.ai/code), [OpenClaw](https://openclaw.ai/), [Codex](https://github.com/openai/codex), Cursor, GitHub Copilot, and [35+ agents](https://github.com/vercel-labs/skills#supported-agents).
+
+```bash
+npx skills add dedene/delijn-cli
+```
+
 ## Features
 
 - **Realtime departures** - See when the next bus/tram arrives
@@ -147,14 +155,6 @@ De Lijn API has two rate limits:
 - **Search API**: 6000 requests/minute
 
 The CLI handles rate limiting automatically.
-
-## Agent Skill
-
-This CLI is available as an [open agent skill](https://skills.sh/) for AI assistants including [Claude Code](https://claude.ai/code), [OpenClaw](https://openclaw.ai/), Cursor, and GitHub Copilot:
-
-```bash
-npx skills add dedene/delijn-cli
-```
 
 ## License
 
