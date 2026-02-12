@@ -163,3 +163,10 @@ Use 6-digit stop numbers. Search with `delijn stops search "name"` to find the c
 - Never expose or log API keys
 - Favorites require user setup - do not create favorites without user consent
 - Watch mode is blocking - inform user it runs continuously
+
+
+## Installation
+
+```bash
+brew install dedene/tap/delijn
+```
