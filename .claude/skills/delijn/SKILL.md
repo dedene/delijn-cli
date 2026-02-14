@@ -4,6 +4,27 @@ description: >
   Query Belgian Flemish public transport (De Lijn) via the delijn CLI. Use when the user wants
   real-time bus/tram departures, stop lookups, line searches, or watch mode for live updates.
   Triggered by mentions of De Lijn, Flanders buses, trams, Belgian public transport, or stop schedules.
+license: MIT
+homepage: https://github.com/dedene/delijn-cli
+metadata:
+  author: dedene
+  version: "1.1.0"
+  openclaw:
+    primaryEnv: DELIJN_API_KEY
+    requires:
+      env:
+        - DELIJN_API_KEY
+        - DELIJN_KEYRING_BACKEND
+      bins:
+        - delijn
+    install:
+      - kind: brew
+        tap: dedene/tap
+        formula: delijn
+        bins: [delijn]
+      - kind: go
+        package: github.com/dedene/delijn-cli/cmd/delijn
+        bins: [delijn]
 ---
 
 # delijn-cli
