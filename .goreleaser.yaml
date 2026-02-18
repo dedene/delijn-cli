@@ -9,24 +9,37 @@ builds:
   - id: delijn
     main: ./cmd/delijn
     binary: delijn
+    env:
+      - CGO_ENABLED=0
+    targets:
+      - linux_amd64
+      - linux_arm64
+      - windows_amd64
+      - windows_arm64
     ldflags: >-
       -s -w
       -X github.com/dedene/delijn-cli/internal/cmd.version={{ .Tag }}
       -X github.com/dedene/delijn-cli/internal/cmd.commit={{ .ShortCommit }}
       -X github.com/dedene/delijn-cli/internal/cmd.date={{ .Date }}
+
+  - id: delijn_darwin
+    main: ./cmd/delijn
+    binary: delijn
     env:
-      - CGO_ENABLED=0
-    goos:
-      - linux
-      - darwin
-      - windows
-    goarch:
-      - amd64
-      - arm64
+      - CGO_ENABLED=1
+    targets:
+      - darwin_amd64
+      - darwin_arm64
+    ldflags: >-
+      -s -w
+      -X github.com/dedene/delijn-cli/internal/cmd.version={{ .Tag }}
+      -X github.com/dedene/delijn-cli/internal/cmd.commit={{ .ShortCommit }}
+      -X github.com/dedene/delijn-cli/internal/cmd.date={{ .Date }}
 
 archives:
   - ids:
       - delijn
+      - delijn_darwin
     formats:
       - tar.gz
     name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
